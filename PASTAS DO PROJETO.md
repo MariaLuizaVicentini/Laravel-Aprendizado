@@ -27,9 +27,10 @@ app/
  │   └── User.php
 
 ```
-
-👉 Tudo que envolve **lógica de negócio e manipulação de dados**.
-
+- Controllers → Armazena os controladores, responsáveis por processas as requisições vindas da ROTA
+- Middlewares → verifica cada requisição e aplica as regras de segurança antes de chegar ao controller
+- Models → onde ficam os modelos que representam as tabelas do banco de dados e as regras de negócio
+- Console → Armazena comandos personalizados que podem ser executados no terminal CMD via Artisan
 ---
 
 ### ⚙️ `config/`
