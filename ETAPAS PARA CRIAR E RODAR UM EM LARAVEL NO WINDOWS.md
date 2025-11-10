@@ -39,7 +39,7 @@ cd nome-pasta
 - Insira o comando abaixo para criar o projeto, baixar a estrutura do laravel e criar as pastas automaticamente 
 
 ```
-composer create-project laravel/laravel nome-projeto
+>composer create-project --prefer-dist laravel/laravel nome-projeto 8.3.*
 ```
 
 ---
