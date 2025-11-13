@@ -145,9 +145,12 @@ O fluxo é assim:
 → [ View ] → [ Resposta ao Usuário ]
 
 ```
-🔹 **Model** → representa os dados e regras de negócio  
-🔹 **View** → exibe a informação (HTML, Blade)  
-🔹 **Controller** → faz a ponte entre rota, model e view
+🔹 O navegador envia uma requisição ao servidor web onde a aplicação está hospedada.
+🔹 O arquivo de rotas identifica qual parte do sistema deve responder com base na URL acessada.
+🔹 A requisição é direcionada ao Controller, que contém a lógica responsável por processar a solicitação.
+🔹 O Controller se comunica com o Model, responsável por lidar com as regras de negócio e acessar o banco de dados.
+🔹 Após obter as informações necessárias, o Controller chama a View, que monta a interface e o conteúdo que será exibido ao usuário.
+🔹 Por fim, o Controller envia a resposta renderizada de volta ao servidor, que a devolve ao navegador do cliente.
 
 ---
 
