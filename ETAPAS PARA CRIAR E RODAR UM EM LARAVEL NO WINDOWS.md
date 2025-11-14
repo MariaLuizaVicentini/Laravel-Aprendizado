@@ -3,7 +3,10 @@
 
 O **Laravel** precisa de **três componentes essenciais** para funcionar corretamente:
 
-- **PHP** – Linguagem principal utilizada pelo Laravel
+- **PHP** – Linguagem principal utilizada pelo Laravel, baixe essa tecnologia primeiro e antes de baixar o composer, acesse o php.ini e habilite as seguintes extenções: 
+		extension=fileinfo
+  		extension=pdo_sqlite
+		extension=openssl
     
 - **Composer** – Gerenciador de dependências do PHP
     
