@@ -1,0 +1,136 @@
+
+🧩 1. Instalar o Git no Windows
+
+Baixe o Git:
+https://git-scm.com/download/win
+
+Execute o instalador → clique Next em tudo (configs padrão são perfeitas).
+
+Verifique instalação no CMD:
+
+git --version
+
+
+Se aparecer algo como git version 2.x.x, está instalado.
+
+🧩 2. Configurar Git pela primeira vez (apenas 1 vez no PC)
+
+Configure seu nome:
+
+git config --global user.name "Seu Nome"
+
+
+Configure seu email:
+
+git config --global user.email "seuemail@exemplo.com"
+
+
+Esses dados aparecem nos commits.
+
+🧩 3. Entrar na pasta do projeto Laravel
+
+No CMD:
+
+cd C:\caminho\da\sua\pasta\projeto
+
+
+Exemplo real:
+
+cd C:\projetos-laravel\controle-series
+
+🧩 4. Iniciar o Git dentro da pasta do projeto
+git init
+
+
+Verificar status:
+
+git status
+
+🧩 5. Criar repositório no GitHub
+
+Vá no GitHub
+
+Clique em New Repository
+
+Nomeie o repositório
+
+Deixe tudo desmarcado:
+
+Sem README
+
+Sem .gitignore
+
+Sem Licence
+
+Clique em Create repository
+
+Vai aparecer uma URL do tipo:
+
+https://github.com/seu-usuario/seu-repositorio.git
+
+
+Guarde essa URL.
+
+🧩 6. Conectar o projeto local ao GitHub
+
+No CMD dentro do projeto:
+
+Adicionar o repositório remoto:
+git remote add origin https://github.com/seu-usuario/seu-repositorio.git
+
+Definir a branch principal como main:
+git branch -M main
+
+🧩 7. Preparar para o commit
+
+Adicionar todos os arquivos do Laravel:
+
+git add .
+
+
+Criar o commit:
+
+git commit -m "Primeiro commit do projeto Laravel"
+
+🧩 8. Enviar para o GitHub
+git push -u origin main
+
+
+Se pedir login:
+
+Login via navegador → permitir autenticação
+(igual você já fez na empresa)
+
+🧩 9. Atualizações futuras (toda vez que mudar algo)
+
+Ver o que mudou:
+
+git status
+
+
+Adicionar mudanças:
+
+git add .
+
+
+Commitar:
+
+git commit -m "mensagem explicando o que alterou"
+
+
+Enviar:
+
+git push
+
+🧩 10. Checklist do Zero ao Deploy
+Etapa	Comando
+Instalar Git	—
+Configurar nome	git config --global user.name "..."
+Configurar email	git config --global user.email "..."
+Entrar no projeto	cd caminho
+Iniciar Git	git init
+Adicionar arquivos	git add .
+Criar commit	git commit -m "..."
+Adicionar repositório remoto	git remote add origin URL
+Definir branch main	git branch -M main
+Enviar para o GitHub	git push -u origin main
